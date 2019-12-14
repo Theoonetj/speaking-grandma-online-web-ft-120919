@@ -13,17 +13,23 @@
 # 'I LOVE YOU TOO PUMPKIN!'
 
 
-def speak_to_grandma(greetGrandma ="hi grandma")
+def speak_to_grandma(phraseToGrandma)
+     
+     # if the phrase is exactly equal to: "I LOVE YOU GRANDMA!"
+  if phraseToGrandma == "I LOVE YOU GRANDMA!"
+    return "I LOVE YOU TOO PUMPKIN!"
     
-    if greetGrandma == greetGrandma.downcase
-      return "HUH?! SPEAK UP, SONNY!"
+    # If you shout, she can hear you and yells back
     
-    elsif greetGrandma == greetGrandma.upcase
-      return "NO, NOT SINCE 1938!"
+  elsif phraseToGrandma == phraseToGrandma.upcase
+    return "NO, NOT SINCE 1938!"
     
-   
-    elsif greetGrandma == "I LOVE YOU GRANDMA!"
-      return "I LOVE YOU TOO PUMPKIN!"
     
+  else
+    # If you shout, she can't hear you and yells back
+    
+    return "HUH?! SPEAK UP, SONNY!"
+  end
+  
+  
 end
-

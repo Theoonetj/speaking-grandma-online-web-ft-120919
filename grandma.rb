@@ -14,16 +14,20 @@
 
 
 def speak_to_grandma(phraseToGrandma)
-  
+     
+     # if the phrase is exactly equal to: "I LOVE YOU GRANDMA!"
   if phraseToGrandma == "I LOVE YOU GRANDMA!"
     return "I LOVE YOU TOO PUMPKIN!"
     
+    # If you shout, she can hear you and yells back
     
   elsif phraseToGrandma == phraseToGrandma.upcase
     return "NO, NOT SINCE 1938!"
     
     
   else
+    # If you shout, she can't hear you and yells back
+    
     return "HUH?! SPEAK UP, SONNY!"
   end
   
